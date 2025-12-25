@@ -36,8 +36,11 @@ export const AboutSection = () => {
             {/* About Content */}
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                Security-First Developer
+                Emiola Mukhtar Adedapo
               </h3>
+              <p className="text-primary font-medium mb-4">
+                Security-First Developer
+              </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 I'm a cybersecurity enthusiast and frontend developer with a keen eye for 
                 identifying vulnerabilities and building robust web applications. My journey 

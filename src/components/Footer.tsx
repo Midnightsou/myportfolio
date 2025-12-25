@@ -8,7 +8,7 @@ export const Footer = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 text-lg font-bold">
             <Shield className="w-5 h-5 text-primary" />
-            <span className="text-gradient">Portfolio</span>
+            <span className="text-gradient">Midnight</span>
           </a>
 
           {/* Copyright */}

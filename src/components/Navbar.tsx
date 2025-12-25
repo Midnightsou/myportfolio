@@ -21,7 +21,7 @@ export const Navbar = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 text-xl font-bold">
             <Shield className="w-6 h-6 text-primary" />
-            <span className="text-gradient">Portfolio</span>
+            <span className="text-gradient">Midnight</span>
           </a>
 
           {/* Desktop Navigation */}

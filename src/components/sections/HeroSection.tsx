@@ -20,9 +20,11 @@ export const HeroSection = () => {
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Cybersecurity &<br />
-            <span className="text-gradient">Frontend Developer</span>
+            Hi, I'm <span className="text-gradient">Emiola Mukhtar</span>
           </h1>
+          <p className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-2 animate-fade-in" style={{ animationDelay: "0.15s" }}>
+            Cybersecurity & Frontend Developer
+          </p>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
