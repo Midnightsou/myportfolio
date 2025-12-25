@@ -1,4 +1,4 @@
-import { Shield, Code, Zap } from "lucide-react";
+import { Shield, Code, Zap, Lock } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -36,21 +36,26 @@ export const AboutSection = () => {
             </p>
 
             {/* Highlights */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <div className="cyber-card text-center">
                 <Shield className="w-8 h-8 text-primary mx-auto mb-2" />
                 <div className="text-2xl font-bold text-primary">Security</div>
                 <div className="text-sm text-muted-foreground">First Approach</div>
               </div>
               <div className="cyber-card text-center">
+                <Lock className="w-8 h-8 text-primary mx-auto mb-2" />
+                <div className="text-2xl font-bold text-primary">Cybersecurity</div>
+                <div className="text-sm text-muted-foreground">Expert</div>
+              </div>
+              <div className="cyber-card text-center">
                 <Code className="w-8 h-8 text-primary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-primary">7+</div>
-                <div className="text-sm text-muted-foreground">Projects</div>
+                <div className="text-2xl font-bold text-primary">Full-Stack</div>
+                <div className="text-sm text-muted-foreground">Developer</div>
               </div>
               <div className="cyber-card text-center">
                 <Zap className="w-8 h-8 text-primary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-primary">Full-Stack</div>
-                <div className="text-sm text-muted-foreground">Developer</div>
+                <div className="text-2xl font-bold text-primary">7+</div>
+                <div className="text-sm text-muted-foreground">Projects</div>
               </div>
             </div>
           </div>
