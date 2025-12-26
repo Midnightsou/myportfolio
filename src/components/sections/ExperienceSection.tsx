@@ -1,4 +1,4 @@
-import { GraduationCap, Briefcase, Calendar } from "lucide-react";
+import { GraduationCap, Briefcase, Calendar, Award } from "lucide-react";
 
 const experiences = [
   {
@@ -8,6 +8,14 @@ const experiences = [
     description: "Currently pursuing my degree with a focus on technology and security. Combining academic excellence with practical projects to build a strong foundation in software development and cybersecurity.",
     period: "Current Student",
     icon: GraduationCap,
+  },
+  {
+    type: "certification",
+    title: "Zero To Mastery Academy",
+    subtitle: "Cybersecurity Training",
+    description: "Completed comprehensive cybersecurity training covering ethical hacking, penetration testing, network security, and vulnerability assessment. Gained practical skills in identifying and mitigating security threats.",
+    period: "Certified",
+    icon: Award,
   },
   {
     type: "internship",
