@@ -36,26 +36,26 @@ export const AboutSection = () => {
             </p>
 
             {/* Highlights */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <div className="cyber-card text-center">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="cyber-card text-center p-4 md:p-6">
                 <Shield className="w-8 h-8 text-primary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-primary">Security</div>
-                <div className="text-sm text-muted-foreground">First Approach</div>
+                <div className="text-lg md:text-xl font-bold text-primary whitespace-nowrap">Security First</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Approach</div>
               </div>
-              <div className="cyber-card text-center">
+              <div className="cyber-card text-center p-4 md:p-6">
                 <Lock className="w-8 h-8 text-primary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-primary">Cybersecurity</div>
-                <div className="text-sm text-muted-foreground">Expert</div>
+                <div className="text-lg md:text-xl font-bold text-primary whitespace-nowrap">Cybersecurity</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Expert</div>
               </div>
-              <div className="cyber-card text-center">
+              <div className="cyber-card text-center p-4 md:p-6">
                 <Code className="w-8 h-8 text-primary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-primary">Full-Stack</div>
-                <div className="text-sm text-muted-foreground">Developer</div>
+                <div className="text-lg md:text-xl font-bold text-primary whitespace-nowrap">Full-Stack</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Developer</div>
               </div>
-              <div className="cyber-card text-center">
+              <div className="cyber-card text-center p-4 md:p-6">
                 <Zap className="w-8 h-8 text-primary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-primary">7+</div>
-                <div className="text-sm text-muted-foreground">Projects</div>
+                <div className="text-lg md:text-xl font-bold text-primary">7+</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Projects</div>
               </div>
             </div>
           </div>
