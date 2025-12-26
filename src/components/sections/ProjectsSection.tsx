@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ExternalLink, Github, Folder } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const categories = ["All", "Full-Stack", "Security", "Frontend", "AI"];
+const categories = ["All", "Full-Stack", "Security", "Frontend"];
 
 const projects = [
   {
@@ -53,6 +53,15 @@ const projects = [
     github: "#",
     live: "#",
   },
+  {
+    title: "keylogger",
+    description: "a simple keylogger built with python to monitor keystrokes on a system for security auditing purposes.",
+    category: "Full-Stack",
+    tech: ["python", "TypeScript", "APIs"],
+    github: "#",
+    live: "#",
+  },
+
 ];
 
 export const ProjectsSection = () => {
@@ -72,7 +81,7 @@ export const ProjectsSection = () => {
               Featured <span className="text-gradient">Projects</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A collection of my work showcasing full-stack development, security tools, and AI integrations
+              A collection of my work showcasing full-stack development, security tools.
             </p>
           </div>
 

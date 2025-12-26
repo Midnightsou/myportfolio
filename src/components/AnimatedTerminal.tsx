@@ -8,6 +8,7 @@ const skills = [
   "Social Engineering",
   "Web App Security",
   "Full-Stack Development",
+  "cybersecurity Enthusiast",
 ];
 
 export const AnimatedTerminal = () => {
@@ -54,7 +55,7 @@ export const AnimatedTerminal = () => {
         <div className="p-6 font-mono text-sm md:text-base">
           <div className="flex items-center gap-2 text-muted-foreground mb-2">
             <span className="text-primary">$</span>
-            <span>cat /home/portfolio/skills.txt</span>
+            <span>root /home/portfolio/skills.txt</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="text-primary">{">"}</span>

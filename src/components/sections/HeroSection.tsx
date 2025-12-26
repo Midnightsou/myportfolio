@@ -45,7 +45,7 @@ export const HeroSection = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-4 mb-12 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <a
-              href="https://github.com"
+              href="https://github.com/midnightsou"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300"
@@ -53,7 +53,7 @@ export const HeroSection = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/emiola-mukhtaradedapo-0246b531b/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300"
@@ -61,7 +61,7 @@ export const HeroSection = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:your@email.com"
+              href="mailto:mukhtaradedpo@gmail.com"
               className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300"
             >
               <Mail className="w-5 h-5" />

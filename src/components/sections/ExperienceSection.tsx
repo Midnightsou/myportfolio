@@ -13,7 +13,7 @@ const experiences = [
     type: "certification",
     title: "Zero To Mastery Academy",
     subtitle: "Cybersecurity Training",
-    description: "Completed comprehensive cybersecurity training covering ethical hacking, penetration testing, network security, and vulnerability assessment. Gained practical skills in identifying and mitigating security threats.",
+    description: "Completed comprehensive cybersecurity training covering ethical hacking, penetration testing, and vulnerability assessment. Gained practical skills in identifying and mitigating security threats.",
     period: "Certified",
     icon: Award,
   },
@@ -25,8 +25,15 @@ const experiences = [
     period: "Internship Period",
     icon: Briefcase,
   },
+{
+    type: "certification",
+    title: "Try hackme",
+    subtitle: "junior penetration tester",
+    description: "Gained hands-on experience in security operations and protocols. Developed an understanding of physical and digital security measures, emergency response procedures, and the importance of vigilance in protecting assets and personnel.",
+    period: "ongoing",
+    icon: Award,
+  },
 ];
-
 export const ExperienceSection = () => {
   return (
     <section id="experience" className="py-24 bg-secondary/30">

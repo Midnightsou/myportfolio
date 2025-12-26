@@ -71,7 +71,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <div className="font-medium">Email</div>
-                    <div className="text-sm text-muted-foreground">your@email.com</div>
+                    <div className="text-sm text-muted-foreground">mukhtaradedapo@gmail.com</div>
                   </div>
                 </a>
 
@@ -91,7 +91,7 @@ export const ContactSection = () => {
                 <h4 className="font-medium mb-4">Follow Me</h4>
                 <div className="flex gap-3">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/midnightsou"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300"
@@ -99,7 +99,7 @@ export const ContactSection = () => {
                     <Github className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/emiola-mukhtaradedapo-0246b531b/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300"
@@ -107,7 +107,7 @@ export const ContactSection = () => {
                     <Linkedin className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://twitter.com"
+                    href="https://x.com/mukhtarade"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300"
