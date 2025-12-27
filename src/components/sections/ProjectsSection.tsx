@@ -10,56 +10,58 @@ const projects = [
     description: "A modern restaurant website featuring an elegant menu display, online reservations, and a seamless user experience for food lovers.",
     category: "Frontend",
     tech: ["React", "Tailwind CSS", "TypeScript"],
-    github: "#",
-    live: "#",
+    status : "ongoing"
   },
   {
     title: "EcoQuest",
     description: "A collaborative environmental awareness platform encouraging sustainable living through gamified challenges and community engagement.",
     category: "Full-Stack",
     tech: ["React", "Node.js", "MongoDB"],
-    github: "#",
-    live: "#",
+    status: "ongoing"
   },
   {
     title: "Secure Admin Dashboard",
-    description: "A comprehensive admin panel with role-based access control, real-time analytics, and secure authentication for enterprise management.",
+    description: "A comprehensive admin panel with role-based access control, and secure authentication for enterprise management.",
     category: "Security",
     tech: ["React", "TypeScript", "JWT", "RBAC"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/Midnightsou/Secure-dashboard-for-admin-main"
   },
   {
     title: "Social Impact Search Finder",
     description: "A platform connecting users with social impact initiatives and volunteer opportunities in their communities.",
     category: "Full-Stack",
     tech: ["React", "APIs", "Tailwind CSS"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/Midnightsou/social-impact-search-inder",
+    live: "https://socialimpactsearch.netlify.app/",
   },
   {
     title: "Password Police",
     description: "A security tool that checks password strength and generates cryptographically secure passwords with customizable complexity rules.",
     category: "Security",
     tech: ["JavaScript", "Crypto API", "React"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/Midnightsou/password-police--------",
+    live: "",
+  },
+  {
+    title: "digital subscription manager",
+    description: "A web application that helps users track and manage their digital subscriptions, providing reminders for renewals and spending analysis.",
+    category: "frontend",
+    tech: ["JavaScript", "React"],
+    github: "https://github.com/Midnightsou/digital-subscription-manager",
   },
   {
     title: "Islamic App",
     description: "A comprehensive Islamic lifestyle app featuring prayer times, Quran reading, and daily reminders for spiritual growth. Currently in development.",
     category: "Full-Stack",
     tech: ["React", "TypeScript", "APIs"],
-    github: "#",
-    live: "#",
+    status: "ongoing"
+
   },
   {
     title: "keylogger",
     description: "a simple keylogger built with python to monitor keystrokes on a system for security auditing purposes.",
     category: "Full-Stack",
     tech: ["python", "TypeScript", "APIs"],
-    github: "#",
-    live: "#",
   },
 
 ];
