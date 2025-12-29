@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { ExternalLink, Github, Folder, ListVideo } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const categories = ["All", "Full-Stack", "Security", "Frontend"];
@@ -7,28 +7,33 @@ const categories = ["All", "Full-Stack", "Security", "Frontend"];
 const projects = [
   {
     title: "Taste Voyage",
-    description: "A modern restaurant website featuring an elegant menu display, online reservations, and a seamless user experience for food lovers.",
+    description:
+      "A modern restaurant website featuring an elegant menu display, online reservations, and a seamless user experience for food lovers.",
     category: "Frontend",
     tech: ["React", "Tailwind CSS", "TypeScript"],
-    status : "ongoing"
+    status: "https://github.com/Midnightsou/aste-Voyage",
+    live: "tastevoage.netlify.app",
   },
   {
     title: "EcoQuest",
-    description: "A collaborative environmental awareness platform encouraging sustainable living through gamified challenges and community engagement.",
+    description:
+      "A collaborative environmental awareness platform encouraging sustainable living through gamified challenges and community engagement.",
     category: "Full-Stack",
     tech: ["React", "Node.js", "MongoDB"],
-    status: "ongoing"
+    status: "ongoing",
   },
   {
     title: "Secure Admin Dashboard",
-    description: "A comprehensive admin panel with role-based access control, and secure authentication for enterprise management.",
+    description:
+      "A comprehensive admin panel with role-based access control, and secure authentication for enterprise management.",
     category: "Security",
     tech: ["React", "TypeScript", "JWT", "RBAC"],
-    github: "https://github.com/Midnightsou/Secure-dashboard-for-admin-main"
+    github: "https://github.com/Midnightsou/Secure-dashboard-for-admin-main",
   },
   {
     title: "Social Impact Search Finder",
-    description: "A platform connecting users with social impact initiatives and volunteer opportunities in their communities.",
+    description:
+      "A platform connecting users with social impact initiatives and volunteer opportunities in their communities.",
     category: "Full-Stack",
     tech: ["React", "APIs", "Tailwind CSS"],
     github: "https://github.com/Midnightsou/social-impact-search-inder",
@@ -36,41 +41,44 @@ const projects = [
   },
   {
     title: "Password Police",
-    description: "A security tool that checks password strength and generates cryptographically secure passwords with customizable complexity rules.",
+    description:
+      "A security tool that checks password strength and generates cryptographically secure passwords with customizable complexity rules.",
     category: "Security",
     tech: ["JavaScript", "Crypto API", "React"],
     github: "https://github.com/Midnightsou/password-police--------",
-    live: "",
+    live: "passwordpoli.netlify.app",
   },
   {
-    title: "digital subscription manager",
-    description: "A web application that helps users track and manage their digital subscriptions, providing reminders for renewals and spending analysis.",
-    category: "frontend",
+    title: "Digital Subscription Manager",
+    description:
+      "A web application that helps users track and manage their digital subscriptions, providing reminders for renewals and spending analysis.",
+    category: "Frontend",
     tech: ["JavaScript", "React"],
     github: "https://github.com/Midnightsou/digital-subscription-manager",
   },
   {
     title: "Islamic App",
-    description: "A comprehensive Islamic lifestyle app featuring prayer times, Quran reading, and daily reminders for spiritual growth. Currently in development.",
+    description:
+      "A comprehensive Islamic lifestyle app featuring prayer times, Quran reading, and daily reminders for spiritual growth. Currently in development.",
     category: "Full-Stack",
     tech: ["React", "TypeScript", "APIs"],
-    status: "ongoing"
-
+    status: "ongoing",
   },
   {
-    title: "keylogger",
-    description: "a simple keylogger built with python to monitor keystrokes on a system for security auditing purposes.",
+    title: "Keylogger",
+    description:
+      "A simple keylogger built with Python to monitor keystrokes on a system for security auditing purposes.",
     category: "Full-Stack",
-    tech: ["python", "TypeScript", "APIs"],
+    tech: ["Python", "APIs"],
   },
-
 ];
 
 export const ProjectsSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredProjects = projects.filter(
-    (project) => activeCategory === "All" || project.category === activeCategory
+    (project) =>
+      activeCategory === "All" || project.category === activeCategory
   );
 
   return (
@@ -83,7 +91,10 @@ export const ProjectsSection = () => {
               Featured <span className="text-gradient">Projects</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A collection of my work showcasing full-stack development, security tools.
+              A collection of my work showcasing full-stack development and
+              security-focused tools.
+              <br />
+              Check my GitHub for source code access.
             </p>
           </div>
 
@@ -107,7 +118,7 @@ export const ProjectsSection = () => {
             {filteredProjects.map((project, index) => (
               <div
                 key={index}
-                className="cyber-card group flex flex-col"
+                className="cyber-card group flex flex-col relative"
               >
                 {/* Project Icon */}
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
@@ -142,21 +153,39 @@ export const ProjectsSection = () => {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-4 pt-4 border-t border-border">
-                  <a
-                    href={project.github}
-                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
-                  >
-                    <Github className="w-4 h-4" />
-                    Code
-                  </a>
-                  <a
-                    href={project.live}
-                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    Live Demo
-                  </a>
+                <div className="flex gap-4 pt-4 border-t border-border relative z-10">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
+                    >
+                      <Github className="w-4 h-4" />
+                      Code
+                    </a>
+                  )}
+
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Live Demo
+                    </a>
+                  )}
+
+                  {project.status === "ongoing" &&
+                    !project.github &&
+                    !project.live && (
+                      <span className="flex items-center gap-2 text-sm text-muted-foreground/60">
+                        <Folder className="w-4 h-4" />
+                        In Progress
+                      </span>
+                    )}
                 </div>
               </div>
             ))}
